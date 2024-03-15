@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:700&display=swap');
+
+$bg: #fff;
+$text: #ffffff;
+$light-blue: #2dbcf5;
+$blue: #2758c2;
+$dark-blue: #14237a;
+$blue-border: #4b8df1;
+$blue-shadow: #06091f;
+
+* {
+  box-sizing: border-box;
+  &::before, &::after {
+    box-sizing: border-box;
+  }
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  font-size: inherit;
+  font-family: inherit;
+  &.learn-more {
+    font-weight: 600;
+    color: $text;
+    text-transform: uppercase;
+    padding: 1.25em 2em;
+    background: $light-blue;
+    border: 2px solid $blue-border;
+    border-radius: 0.75em;
+    transform-style: preserve-3d;
+    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1);
+    &::before {
+      position: absolute;
+      content: '';
+      width: 20%;
+      height: 20%;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: $dark-blue;
+      border-radius: inherit;
+      box-shadow: 0 0 0 2px $blue-border, 0 0.625em 0 0 $blue-shadow;
+      transform: translate3d(0, 0.75em, -1em);
+      transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
+    }
+    &:hover {
+      background: $blue;
+      transform: translate(0, 0.25em);
+      &::before {
+        box-shadow: 0 0 0 2px $blue-border, 0 0.5em 0 0 $blue-shadow;
+        transform: translate3d(0, 0.5em, -1em);
+      }
+    }
+    &:active {
+      background: $blue;
+      transform: translate(0em, 0.75em);
+      &::before {
+        box-shadow: 0 0 0 2px $blue-border, 0 0 $blue-shadow;
+        transform: translate3d(0, 0, -1em);
+      }
+    }
+  }
+}

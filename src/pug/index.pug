@@ -1,0 +1,492 @@
+doctype html
+html(lang='en')
+
+    head
+
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
+        meta(name='description', content='')
+        meta(name='author', content='')
+
+        title Muhammet Aldulaimi's resume
+
+        link(rel='icon', type='image/x-icon', href='assets/img/favicon.ico')
+
+        // Font Awesome icons (free version)
+        script(src='https://use.fontawesome.com/releases/v5.15.3/js/all.js', crossorigin='anonymous')
+
+        // Google fonts
+        link(href='https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:500,700', rel='stylesheet', type='text/css')
+        link(href='https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i', rel='stylesheet', type='text/css')
+
+        // Core theme CSS (includes Bootstrap)
+        link(href='css/styles.css', rel='stylesheet')
+
+    body#page-top
+
+        // Navigation
+        nav#sideNav.navbar.navbar-expand-lg.navbar-dark.bg-primary.fixed-top
+            a.navbar-brand.js-scroll-trigger(href='#page-top')
+                span.d-block.d-lg-none My Resume
+                span.d-none.d-lg-block
+                    img.img-fluid.img-profile.rounded-circle.mx-auto.mb-2(src='assets/img/profile.jpg', alt='my_amazing_selfie')
+            button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            #navbarResponsive.collapse.navbar-collapse
+                ul.navbar-nav
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#welcome') Welcome
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#projects') Projects
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#skills') Skills
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#experience') Experience
+                    li.nav-item
+                        a.nav-link.js-scroll-trigger(href='#about') About
+
+        // Page Content
+        .container-fluid.p-0
+
+            // Welcome
+            section#welcome.resume-section
+                .resume-section-content
+                    h1.mb-0
+                        | Muhammed
+                        span.text-primary Al-Dulaimi
+                    .subheading.mb-5
+                        | Turkey · Samsun, İlkadım · +90 552-499-9303 · 
+                        a(href='mailto:muhammed.aldulaimi98@gmail.com') muhammed.aldulaimi98@gmail.com
+                    p.lead.mb-5
+                        | Full Stack developer with 4+ industry experience building websites and web applications.
+                    .social-icons
+                        a.social-icon(target="_blank", href='https://www.linkedin.com/in/muhammet-al-dulaimi-b66929168')
+                            i.fab.fa-linkedin-in
+                        a.social-icon(target="_blank", href='https://github.com/that-one-arab')
+                            i.fab.fa-github
+
+            hr.m-0
+
+            // Projects
+            section#projects.resume-section
+               .resume-section-content
+                    h2.mb-5 Most Notable Projects
+
+                    //- Project: Stoic Diary
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1.clearfix
+                            .col-md-6.float-md-end.mb-3.ms-md-3
+                                .gif-container
+                                    img.gif(src="../assets/gif/stoicdiary_site_preview.gif", alt="stoicdiary_site_preview")
+                                    .gif-btns
+                                        .gif-btns-group
+                                            a(target="_blank", href="https://github.com/that-one-arab/stoic-diary-frontend")
+                                                button.gif-btn.learn-more
+                                                    | Repo
+                            h3.mb-0 Stoic Diary
+                            p.lead
+                                | A specific type of journaling that focuses on strengthening good habits
+                            p 
+                                | Composed of 3 sections: this application helps the user by providing them an objective perspective on how their day went 
+                            p.lead 
+                                | Features:
+                            ul
+                                li
+                                    | Simple and intuitive UX/UI
+                                li
+                                    | Mobile responsive
+                                li
+                                    | Keyboard navigation support
+                                li
+                                    | Diary entries API autocomplete support
+                            p.lead
+                                | Tech stack used:
+                            ul
+                                li 
+                                    | Front End:
+                                    ul
+                                        li
+                                            | Vue, Vuex, Vue-Router, Vuetify
+                                li 
+                                    | Back End:
+                                    ul
+                                        li
+                                            | Django, Django-rest-api, postgresql
+                                li 
+                                    | Deployment:
+                                    ul
+                                        li
+                                            | Ubuntu, Nginx, Docker.
+
+                    //- Project: GPT Interactive Novel
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1.clearfix
+                            .col-md-6.float-md-end.mb-3.ms-md-3
+                                .gif-container
+                                    img.gif(src="../assets/gif/gpt-interactive-novel.gif", alt="gpt-interactive-novel")
+                                    .gif-btns
+                                        .gif-btns-group
+                                            a(target="_blank", href="https://github.com/that-one-arab/gpt-interactive-novel")
+                                                button.gif-btn.learn-more
+                                                    | Repo
+                            h3.mb-0 GPT Interactive Novel
+                            p.lead
+                                | A customizable interactive fiction novel that utilizes GPT. Playable straight from the terminal
+                            p.lead 
+                                | Features:
+                            ul
+                                li
+                                    | Experience an interactive fiction novel with a clear beginning and end goal.
+                                li
+                                    | Choose your own story setting and theme.
+                                li
+                                    | Insert as many characters as you want to the story.
+                                li
+                                    | Choose your story length
+                                li 
+                                    | Choose between choice based novels or free text novels
+                            p.lead
+                                | Tech stack used:
+                            ul
+                                li 
+                                    | Open AI GPT API
+                                li
+                                    | Python
+
+
+                    //- Project: EncrypTOR
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1.clearfix
+                            .col-md-6.float-md-end.mb-3.ms-md-3
+                                .gif-container
+                                    img.gif(src="../assets/gif/encryptor_site_preview.gif", alt="encryptor_site_preview")
+                                    .gif-btns
+                                        .gif-btns-group
+                                            a(target="_blank", href="https://encryptor-app.herokuapp.com/")
+                                                button.gif-btn.learn-more
+                                                    | Demo
+                                            a(target="_blank", href="https://github.com/that-one-arab/encryptor")
+                                                button.gif-btn.learn-more
+                                                    | Repo
+                            h3.mb-0 Messages Encryption And Decryption Web App
+                            p.lead
+                                | An app that encrypts and decrypts messages using a custom made symmetric-key algorithm.
+                            p 
+                                | I figured that using a popular crypt library would be too easy and I was interested in symmetric algorithms, so I created my own crypt library. The custom crypt library is not very secure, I recommend you use this app for entertainment purposes.
+                            p.lead 
+                                | Features:
+                            ul
+                                li
+                                    | Generate a private key to safely encrypt your messages.
+                                li
+                                    | Save your encrypted message to the cloud.
+                                li
+                                    | Access and decrypt your encrypted message at any point and time using the previously generated private key.
+                            p.lead
+                                | Tech stack used:
+                            ul
+                                li 
+                                    | Front End:
+                                    ul
+                                        li
+                                            | React, Redux.
+                                li 
+                                    | Back End:
+                                    ul
+                                        li
+                                            | Node.js, Express, MySQL.
+                                li 
+                                    | Deployment:
+                                    ul
+                                        li
+                                            | Heroku.
+
+                    //- Project: Mafia
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1.clearfix
+                            .col-md-6.float-md-end.mb-3.ms-md-3
+                                .gif-container
+                                    img.gif(src="../assets/img/mafia_game_still.png", alt="b2b-iys_site_preview")
+                                    .gif-btns
+                                        .gif-btns-group
+                                            a(target="_blank", href="https://github.com/that-one-arab/mafia-game")
+                                                button.gif-btn.learn-more
+                                                    | Repo
+                            h3.mb-0 Mafia
+                            p.lead
+                                | An online multiplayer version of the social party game
+                            p 
+                                | The game features a total of 11 roles. Games are intutive with seperate designs for mafia or town team.
+                            p.lead 
+                                | Features:
+                            ul
+                                li
+                                    | Online hosted, no account creation necessary. Create a game to get a game code, then share that game code with people you want them to join.
+                                li
+                                    | No players cap. A minimum of 4 players are required (anything below 4 players would end the game in seconds) and you can play with as many players as you want (preferably 16 but this number depends on the capacity of the server)
+                                li
+                                    | Teams and roles are distributed with a carefully written algorithm that balances teams according to players and ensures every game is unique and different.
+                                li
+                                    | Total of 11 roles were implemented with 7 belonging to Town and 4 belonging to Mafia.
+                            p.lead
+                                | Tech stack used:
+                            ul
+                                li 
+                                    | Front End:
+                                    ul
+                                        li
+                                            | React, Redux, Socket.io
+                                li 
+                                    | Back End:
+                                    ul
+                                        li
+                                            | Node.js, Express, MongoDB, Socket.io
+                                li 
+                                    | Deployment:
+                                    ul
+                                        li
+                                            | Ubuntu, Nginx, Docker.
+
+                    //- Project: Dental-crm
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1.clearfix
+                            .col-md-6.float-md-end.mb-3.ms-md-3
+                                .gif-container
+                                    img.gif(src="../assets/gif/dental_crm_site_preview.gif", alt="b2b-iys_site_preview")
+                                    .gif-btns
+                                        .gif-btns-group
+                                            a(target="_blank", href="https://github.com/that-one-arab/dental-crm")
+                                                button.gif-btn.learn-more
+                                                    | Repo
+                            h3.mb-0 Dental CRM
+                            p.lead
+                                | A custom solution for dentists to manage their every patients and business needs
+                            p 
+                                | The site is outfitted with patient records, treatments records, automatic accounting, expenses and incomes records and a dynamic drag and drop based appointments system
+                            p.lead 
+                                | Features:
+                            ul
+                                li
+                                    | Create a patient record.
+                                li
+                                    | Add a treatment with automatic price population or manual price entry to patients
+                                li
+                                    | Create an appointment using the drag and drop based appointment system
+                                li
+                                    | Track expenses and income using the automatic accounting handler
+                            p.lead
+                                | Tech stack used:
+                            ul
+                                li 
+                                    | Front End:
+                                    ul
+                                        li
+                                            | React, Redux, XLSX, ReactDnD, 
+                                li 
+                                    | Back End:
+                                    ul
+                                        li
+                                            | Node.js, Express, PostgresQL, JWT, Bcrypt
+                                li 
+                                    | Deployment:
+                                    ul
+                                        li
+                                            | Ubuntu, Nginx, Docker.
+
+
+                    //- Project: GPT Interactive Novel
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1.clearfix
+                            .col-md-6.float-md-end.mb-3.ms-md-3
+                                .gif-container
+                                    img.gif(src="../assets/gif/sahih-ai.gif", alt="sahih-ai")
+                                    .gif-btns
+                                        .gif-btns-group
+                                            a(target="_blank", href="https://github.com/that-one-arab/sahih-ai")
+                                                button.gif-btn.learn-more
+                                                    | Repo
+                            h3.mb-0 Sahih AI
+                            p.lead
+                                | A Chat GPT plugin that retrieves authentic islamic hadiths based on the 6 sahih books 
+                            p.lead 
+                                | Features:
+                            ul
+                                li
+                                    | Ask GPT and receive authentic hadiths using natural language.
+                            p.lead
+                                | Tech stack used:
+                            ul
+                                li 
+                                    | Open AI GPT API
+                                li
+                                    | Langchain
+                                li
+                                    | Pinecone
+                                li
+                                    | Sentence Transformer Embeddings
+
+                    //- Project: EOAS
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1.clearfix
+                            .col-md-6.float-md-end.mb-3.ms-md-3
+                                .gif-container
+                                    img.gif(src="../assets/gif/eoas_site_preview.gif", alt="eoas_site_preview")
+                                    .gif-btns
+                                        .gif-btns-group
+                                            a(target="_blank", href="https://github.com/that-one-arab/eoas")
+                                                button.gif-btn.learn-more
+                                                    | Repo
+                            h3.mb-0 Pharmacies Joint Purchase System
+                            //- .subheading.mb-3 Intelitec Solutions
+                            p.lead
+                                | A custom solution for a group of pharmacies. It enables them to pre-plan and make a joint purchase from wholesaler depos to reduce wholesale purchasing costs.
+                            p 
+                                | A great solution for all types of vendors, although it was customized for pharmacies. It allows them to submit a joint medicine purchase application that includes details of the purchase, await other pharmacies to participate in the purchase by submitting a join request and approve the application after the required purchase amount has been fullfilled.
+                            p.lead 
+                                | Features:
+                            ul
+                                li
+                                    | Query a medicine list with over 7000 medicine names and barcodes.
+                                li
+                                    | Join another pending application, choose purchase total, so it can be added to the total purchase goal.
+                                li
+                                    | Submit an application with a specific total purchase goal and approve it once the goal has been met.
+                                li 
+                                    | Get a transaction result for all respective participants depending on the purchase total.
+                                li
+                                    | Track and view reports of all applications and transactions made.
+                            p.lead
+                                | Tech stack used:
+                            ul
+                                li 
+                                    | Front End:
+                                    ul
+                                        li
+                                            | React, Redux, Apollo-Client.
+                                li 
+                                    | Back End:
+                                    ul
+                                        li
+                                            | Node.js, Express-GraphQL, MongoDB, JWT, Bcrypt.
+                                li 
+                                    | Deployment:
+                                    ul
+                                        li
+                                            | Ubuntu, Nginx, Docker.
+
+            hr.m-0
+
+            // Skills
+            section#skills.resume-section
+                .resume-section-content
+                    h2.mb-5 Skills
+                    .subheading.mb-3 Programming Languages & Tools
+                    ul.list-inline
+                        li
+                            i.bold
+                                | LANGUAGES: 
+                            i   
+                                | Javascript, Typescript, Python, C#, PHP, Ruby
+                    ul.list-inline
+                        li
+                            i.bold
+                                | FRONT END: 
+                            i   
+                                | HTML, CSS, SASS, React, Redux, Apollo-Client, Vue.
+                    ul.list-inline
+                        li
+                            i.bold
+                                | BACK END: 
+                            i   
+                                | NodeJS, Express, GraphQL, Express-Graphql, Django, ASP.NET, Socket IO.
+                    ul.list-inline
+                        li
+                            i.bold
+                                | DATABASE: 
+                            i   
+                                | PostgresQL, MongoDB, MySQL, SQL Server.
+                    ul.list-inline
+                        li
+                            i.bold
+                                | MISC: 
+                            i   
+                                | HTML Templating Engines, Git, Docker, Jekyll, AWS, Ubuntu, Nginx.
+                                    
+                    .subheading.mb-3 Workflow
+                    ul.fa-ul.mb-0
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Clean and maintainable code
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Problem solving and Debugging
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Team player
+                        li
+                            span.fa-li
+                                i.fas.fa-check
+                            | Agile Development
+
+            hr.m-0
+
+
+            // Experience
+            section#experience.resume-section
+               .resume-section-content
+                    h2.mb-5 Experience
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Frontend Developer
+                            .subheading.mb-3 Salalem
+                            p
+                                | Frontend developer maintaining and developing multiple large platforms. 
+                        .flex-shrink-0
+                            span.text-primary February 2022 - Present
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Full Stack Developer
+                            .subheading.mb-3 24EASTYARD
+                            p
+                                | Lead Back End Developer for multiple large-scale projects
+                        .flex-shrink-0
+                            span.text-primary October 2021 - February 2022
+
+                    .d-flex.flex-column.flex-md-row.justify-content-between.mb-5
+                        .flex-grow-1
+                            h3.mb-0 Full Stack Developer
+                            .subheading.mb-3 Freelancer
+                            p
+                                | Freelanced as a Full Stack Developer building custom CRM solutions and web pages
+                        .flex-shrink-0
+                            span.text-primary November 2019 - October 2021
+            hr.m-0
+
+            // About Me
+            section#about.resume-section
+                .resume-section-content
+                    h2.mb-5 About Me
+                    p
+                        | I was born in Iraq in 1998; I grew up loving videogames and computers. My first experience with a programming language was C++ at the age of 16.
+                    p
+                        | I continued pursuing programming as a hobby, deciding to switch to Web Development since I enjoyed creating and sharing websites that can be accessed by anyone on the internet.
+                    p
+                        | Beside Arabic being my mother tongue, I'm bilingual with English, since I learned it at a very young age.
+                    p 
+                        | I moved to Turkey in 2014, and have been living there for more than 8 years. I learned Turkish over this time span and can speak it at a high level
+                    p
+                        | I like experimenting with new technologies.
+                    p
+                        | I also enjoy learning about topics that interest me, mostly about computers, psychology and philosophy.
+
+
+        // Bootstrap core JS
+        script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js')
+
+        // Core theme JS
+        script(src='js/scripts.js')
